@@ -1,0 +1,2 @@
+# Sentinel-2-Scene-Classification-SCL-RGB-TIFF-into-an-ENVI-classification-file
+This Python script converts Sentinel-2 RGB classification TIFFs to ENVI format, preserving geospatial data. It classifies pixels using ESA's color codes, prioritizes water detection, and outputs binary .dat + .hdr files with full metadata. Includes visualization and CRS verification. Ideal for GIS/remote sensing workflows.
