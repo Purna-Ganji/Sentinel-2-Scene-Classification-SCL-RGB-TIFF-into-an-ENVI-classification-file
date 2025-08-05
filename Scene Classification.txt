@@ -1,4 +1,5 @@
-This script converts a Sentinel-2 Scene Classification (SCL) RGB TIFF into an ENVI classification file while preserving all geospatial information. Here's what it does:
+This script converts Sentinel-2's 10m resolution Scene Classification Layer from an 8-bit per channel RGB TIFF (3x8-bit = 24-bit color) into an 8-bit single-band ENVI classification file. It precisely maps ESA's 12 color-coded classes (0-11) while preserving the original 10m resolution and WGS84 geolocation. The output generates two files: a compact .dat raster with class IDs and a metadata-rich .hdr file containing coordinate references and Sentinel-2's official class definitions. A validation plot confirms the 8-bit classification matches the input colors. This creates analysis-ready thematic data ideal for pixel-perfect land cover change detection in remote sensing workflows.
+ Here's what it does:
 
 Input Handling:
 
