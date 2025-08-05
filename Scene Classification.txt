@@ -1,0 +1,43 @@
+This script converts a Sentinel-2 Scene Classification (SCL) RGB TIFF into an ENVI classification file while preserving all geospatial information. Here's what it does:
+
+Input Handling:
+
+Reads a Sentinel-2 L2A classification TIFF (RGB format where colors represent classes)
+
+Extracts and preserves the original coordinate reference system (CRS)
+
+Classification Processing:
+
+Uses official ESA color codes to reclassify the RGB image
+
+Implements priority-based classification (water gets priority over other classes)
+
+Handles edge cases (pure black pixels = No Data)
+
+ENVI Format Output:
+
+Creates a binary .dat file with class IDs
+
+Generates a detailed .hdr file with:
+
+Geospatial metadata (CRS, pixel size, map info)
+
+Class names and colors
+
+File format specifications
+
+Visual Verification:
+
+Displays the classification result with correct colors
+
+Shows colorbar with class IDs
+
+Verifies CRS preservation
+
+Key Features:
+
+Maintains exact geospatial alignment
+
+Handles Sentinel-2's 12-class system
+
+Produces ENVI-compatible files that can be directly used in GIS software
